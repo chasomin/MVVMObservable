@@ -12,9 +12,9 @@ class AddUserViewModel {
 
     let addButtonTapped: Observable<String?> = Observable(nil)
     let searchButtonTapped: Observable<String?> = Observable(nil)
+    let deleteButtonTapped: Observable<Void?> = Observable(nil)
+    
     init() {
-        fetchUser()
-
         addButtonTapped.bind { value in
             guard let value else { return }
             let checkSameNameResult = self.userList.value.filter {
@@ -29,8 +29,13 @@ class AddUserViewModel {
         searchButtonTapped.bind { value in
             guard let value else { return }
             self.filterSearchTextUser(value)
-            
         }
+        
+        deleteButtonTapped.bind { _ in
+            self.userList.value.removeAll()
+        }
+        
+        fetchUser()
     }
     
     func fetchUser() {

@@ -104,6 +104,7 @@ class AddUserViewController: UIViewController {
     
     @objc func deleteButtonTapped() {
         //TODO: Delete
+        viewModel.deleteButtonTapped.value = ()
     }
     
     @objc func searchButtonTapped() {
