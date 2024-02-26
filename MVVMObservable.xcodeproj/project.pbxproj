@@ -23,6 +23,9 @@
 		79447EBD2B88B898000876DF /* EmailPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79447EBC2B88B898000876DF /* EmailPWViewController.swift */; };
 		79447EBF2B88C493000876DF /* EmailPWViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79447EBE2B88C493000876DF /* EmailPWViewModel.swift */; };
 		79447EC12B88C57A000876DF /* ObservableEmailPW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79447EC02B88C57A000876DF /* ObservableEmailPW.swift */; };
+		79447ED82B8CB6DD000876DF /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79447ED72B8CB6DD000876DF /* AddUserViewController.swift */; };
+		79447EDA2B8CBCA8000876DF /* AddUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79447ED92B8CBCA8000876DF /* AddUserViewModel.swift */; };
+		79447EDC2B8CBD16000876DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79447EDB2B8CBD16000876DF /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		79447EBC2B88B898000876DF /* EmailPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPWViewController.swift; sourceTree = "<group>"; };
 		79447EBE2B88C493000876DF /* EmailPWViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPWViewModel.swift; sourceTree = "<group>"; };
 		79447EC02B88C57A000876DF /* ObservableEmailPW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableEmailPW.swift; sourceTree = "<group>"; };
+		79447ED72B8CB6DD000876DF /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		79447ED92B8CBCA8000876DF /* AddUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewModel.swift; sourceTree = "<group>"; };
+		79447EDB2B8CBD16000876DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				7938439B2B8729AD000BDDF9 /* Info.plist */,
 				79447EBA2B88B856000876DF /* NumberTextField */,
 				79447EBB2B88B86C000876DF /* EmailPassword */,
+				79447ED62B8CB693000876DF /* AddUser */,
 			);
 			path = MVVMObservable;
 			sourceTree = "<group>";
@@ -118,6 +125,16 @@
 				79447EC02B88C57A000876DF /* ObservableEmailPW.swift */,
 			);
 			path = EmailPassword;
+			sourceTree = "<group>";
+		};
+		79447ED62B8CB693000876DF /* AddUser */ = {
+			isa = PBXGroup;
+			children = (
+				79447ED72B8CB6DD000876DF /* AddUserViewController.swift */,
+				79447ED92B8CBCA8000876DF /* AddUserViewModel.swift */,
+				79447EDB2B8CBD16000876DF /* User.swift */,
+			);
+			path = AddUser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,12 +215,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				793843AD2B879427000BDDF9 /* UserInputView.swift in Sources */,
+				79447EDA2B8CBCA8000876DF /* AddUserViewModel.swift in Sources */,
 				793843AF2B879A40000BDDF9 /* Observable2.swift in Sources */,
 				79447EC12B88C57A000876DF /* ObservableEmailPW.swift in Sources */,
 				793843922B8729AB000BDDF9 /* ViewController.swift in Sources */,
 				793843A72B872E9D000BDDF9 /* Observable.swift in Sources */,
 				793843A52B872E93000BDDF9 /* IdViewModel.swift in Sources */,
 				79447EBF2B88C493000876DF /* EmailPWViewModel.swift in Sources */,
+				79447EDC2B8CBD16000876DF /* User.swift in Sources */,
+				79447ED82B8CB6DD000876DF /* AddUserViewController.swift in Sources */,
 				7938438E2B8729AB000BDDF9 /* AppDelegate.swift in Sources */,
 				793843AB2B879415000BDDF9 /* UserInputViewModel.swift in Sources */,
 				793843A92B8793E7000BDDF9 /* UserInputViewController.swift in Sources */,

@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     }
     
     @objc func idTextFieldChanged() {
-        viewModel.input.email = idTextField.text!
+        viewModel.input.value = idTextField.text!
     }
 }
 

@@ -21,13 +21,13 @@ class IdViewModel {
     func vaildation(_ input: String) {
         print(#function)
         if input.isEmpty {
-            output.email = "아이디를 입력해주세요"
+            output.value = "아이디를 입력해주세요"
         }
         let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         if input.range(of: regex, options: .regularExpression) != nil {
-            output.email = input
+            output.value = input
         } else {
-            output.email = "이메일 형식을 지켜주세요"
+            output.value = "이메일 형식을 지켜주세요"
         }
         
     }
